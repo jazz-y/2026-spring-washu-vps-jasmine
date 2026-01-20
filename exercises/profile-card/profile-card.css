@@ -8,6 +8,7 @@ main {
   justify-content: center;
   height: 100vh;
   padding-bottom: 5em;
+  /* padding-top: 5em; */
 }
 .profile {
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -49,7 +50,7 @@ main {
 }
 .aspect-ratio {
   aspect-ratio: 1 / 1;
-  background-color: #ffe600;
+  background-color: #5bbce1;
   margin-right: 1em;
   margin-bottom: 1em;
 }
@@ -62,8 +63,8 @@ main {
   padding-top: 0;
   padding-left: 0.2em;
   padding-bottom: 0;
-  font-size: 60px;
-  font-family: "Times New Roman", serif;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
   /* font-weight: bold;
         font-style: italic; */
 }
