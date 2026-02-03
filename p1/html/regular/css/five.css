@@ -1,47 +1,33 @@
-/* fancy */
+/* centered */
 @import url('https://fonts.googleapis.com/css2?family=Pinyon%20Script:wght@400&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Limelight:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM%20Fell%20French%20Canon:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dynalight:wght@400&display=swap');
 * {
-    text-align: center;
-    font-family: 'IM Fell French Canon', serif;
-    letter-spacing:0.1rem;
+}
+
+body {
+    width: 50%;
+    position: relative;
+    padding: 5% 25% 5% 25%;
 }
 
 th {
-    font-family: 'Limelight', cursive;
-    font-size: 1.25rem;
 }
 
 h2 {
-    font-family: 'Dynalight', cursive;
-    font-size: 3rem;
-    text-transform: capitalize;
 }
 
 #title {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 4rem;
-    /* letter-spacing: 1rem; */
 }
 
 #subtitle {
-    font-size: 3rem;
-    font-family: 'Limelight', cursive;
-    letter-spacing: -0.3rem;
 }
 
 #address {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.2rem;
-    letter-spacing: 1.25rem;
 }
 
 #motto {
-    font-style: italic;
-    font-size: 1.5rem;
-    letter-spacing: -0.1rem;
 }
 
 #breakfast {
