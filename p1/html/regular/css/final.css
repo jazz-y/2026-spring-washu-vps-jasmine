@@ -11,7 +11,6 @@
         /* padding: 0.5rem; */
     }
     header {
-        /* padding: 0.5rem 0; */
         display: flex;
         width: 100%;
     }
@@ -30,7 +29,7 @@
         flex-direction: column;
     }
     #motto-container * {
-        width: 100%;
+        /* width: 100%; */
     }
 }
 
@@ -55,7 +54,7 @@
         flex-direction: row;
     }
     #motto-container * {
-        width: 50%;
+        /* width: 50%; */
     }
 }
 
@@ -88,7 +87,7 @@
         flex-direction: row;
     }
     #motto-container * {
-        width: 50%;
+        /* width: 50%; */
     }
 }
 
@@ -112,8 +111,8 @@ html {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url("https://thumbs.dreamstime.com/b/white-wood-siding-texture-background-house-old-worn-chipped-paint-pattern-86777307.jpg");
-    background-repeat: round;
+    background-image: url("https://images.freeimages.com/images/large-previews/101/wood-siding-texture-3-1150238.jpg?h=350");
+    background-repeat: repeat;
 }
 
 body {
@@ -148,6 +147,7 @@ header {
     height:30%;
     background-color: rgb(89, 151, 161);
     padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .menu-flex {
@@ -168,8 +168,9 @@ header {
 nav * {
     color: white;
     font-family: 'Comfortaa', sans-serif;
-    font-size: 0.9rem;
-    padding: 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.5rem;
+    /* width: 100%; */
 }
 
 nav {
@@ -188,14 +189,14 @@ nav {
 }
 
 #motto-container * {
-    width: 50%;
+    /* width: 50%; */
     margin-top: 1rem;
     text-align: center;
 }
 
 #motto-container img {
     width: 100%;
-    max-width: 500px;
+    /* max-width: 500px; */
     height: auto;
     border-radius: 1rem;
 }
@@ -269,6 +270,7 @@ span {
 #address {
     /* padding: 0.01rem; */
     margin: 0.5rem;
+    max-height: 10%;
 }
 
 #motto {
