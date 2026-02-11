@@ -116,6 +116,7 @@ header {
     width: 100%;
     background-color: rgb(89, 151, 161);
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .menu-flex {
@@ -146,6 +147,12 @@ header {
     width: 50%;
     margin-top: 1rem;
     text-align: center;
+}
+
+#motto-container img {
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: contain;
 }
 
 .menu-row {
@@ -204,6 +211,7 @@ span {
     background-color: rgb(89, 151, 161);
     display: flex;
     width: 100%;
+    max-width: 400px;
     height: auto;
     margin: 0 auto;
 }
