@@ -31,6 +31,17 @@
     #motto-container * {
         /* width: 100%; */
     }
+
+    /* Ensure up button is visible and sized for mobile */
+    #up-btn {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 1em;
+        z-index: 1000;
+        display: block;
+    }
 }
 
 /* Tablet: 601px to 900px */
@@ -96,12 +107,13 @@
 }
 
 span {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: 0.2rem solid rgb(51, 147, 161);
     background-color: rgb(205, 239, 245);
 }
 
-.menu-header {
+h2, li, #lunch-note, #v60-pour-over-desc {
+    background-color: rgb(235, 235, 235);
 
 }
 
@@ -111,8 +123,9 @@ html {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url("https://images.freeimages.com/images/large-previews/101/wood-siding-texture-3-1150238.jpg?h=350");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/057/214/016/non_2x/peeling-paint-on-weathered-wooden-siding-showing-age-and-texture-black-and-white-close-up-simple-background-of-horizontal-lines-free-photo.jpg");
     background-repeat: repeat;
+    background-size: 33.33% 33.33%;
 }
 
 body {
@@ -179,6 +192,26 @@ nav {
     flex-flow: row wrap;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+#up-btn {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    background-color: rgb(89, 151, 161);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
 #motto-container {
     display: flex;
     flex-direction: row;
@@ -198,7 +231,7 @@ nav {
     width: 100%;
     /* max-width: 500px; */
     height: auto;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .menu-row {
@@ -222,13 +255,19 @@ nav {
     z-index: 1;
     transform: translateY(100%);
     transition: transform 1s ease;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
      aspect-ratio: 1 / 1;
+}
+
+#first-item-image {
+    animation: nudgeUp 2s ease 0.5s;
 }
 
 .item-slide:hover .item-image {
     transform: translateY(0);
 }
+
+
 
 .item-slide {
     display: flex;
@@ -236,8 +275,7 @@ nav {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     background-color: rgb(205, 239, 245);
-    border-radius: 1rem;
-
+    border-radius: 0.5rem;
 }
 
 .item {
@@ -440,4 +478,12 @@ footer p {
 @keyframes slideOut {
     from { opacity: 1; transform: translateY(0px); }
     to { opacity: 1; transform: translateY(-100%); }
+}
+
+@keyframes nudgeUp {
+    0% { transform: translateY(100%); }
+    25% { transform: translateY(30%); }
+    50% { transform: translateY(100%); }
+    75% { transform: translateY(30%); }
+    100% { transform: translateY(100%); }
 }
