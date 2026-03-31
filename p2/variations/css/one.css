@@ -1,5 +1,521 @@
+@font-face {
+    font-family: 'Century Expanded';
+    src: url(../fonts/Century\ Expanded\ Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Playbill';
+    src: url(../fonts/Playbill.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Evening Regular';
+    src: url(../fonts/Evening-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Clarendon Lt BT Light';
+    src: url(../fonts/Clarendon\ Lt\ BT\ Light.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Clarendon BT Roman';
+    src: url(../fonts/Clarendon\ BT\ Roman.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Clarendon BT Bold';
+    src: url(../fonts/Clarendon\ BT\ Bold.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Clarendon Blk BT Black';
+    src: url(../fonts/Clarendon\ Blk\ BT\ Black.ttf) format('opentype');
+}
+
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+html {
+    background-image: url("https://img.freepik.com/free-photo/whitish-grain-wall-template_1194-6731.jpg?semt=ais_incoming&w=740&q=80");
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+}
+
+
+@media (max-width:750px) {
+    div {
+        max-width: 90%;
+    }
+    body {
+        width: 95%;
+        max-width: 100%;
+    }
+    #playbill-title {
+        font-size: 64px;
+        letter-spacing: 0.6rem;
+    }
+    #toc-table-title {
+        font-size: 36px;
+        letter-spacing: 0.4rem;
+    }
+}
+
+@media (max-width:600px) {
+    #playbill-title {
+        font-size: 48px;
+        letter-spacing: 0.4rem;
+    }
+    #toc-table-title {
+        font-size: 28px;
+        letter-spacing: 0.3rem;
+    }
+    #production-overview h3 {
+        font-size: 20px;
+    }
+    #production-overview h4 {
+        font-size: 24px;
+        letter-spacing: 0.12rem;
+    }
+    #production-overview p {
+        font-size: 10px;
+    }
+}
+
+p {
+    text-align: center;
+    font-family: "Century Expanded", serif;
+    font-size: 18px;
+    line-height: 1.45;
+    margin: 0.4rem 0;
+}
+
+table {
+    margin: 0 auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
+.section-link {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    font-family: "Clarendon BT Bold", serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    margin: 0.4rem 0 0.2rem 0;
+}
+
+#intro-credits {
+    font-family: "Century Expanded", serif;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+#playbill-title {
+    font-family: "Playbill", serif;
+    font-size: 90px;
+    color: white;
+    text-shadow:
+        -2px -2px 0 #000,
+        0   -2px 0 #000,
+        2px -2px 0 #000,
+        2px  0   0 #000,
+        2px  2px 0 #000,
+        0    2px 0 #000,
+        -2px  2px 0 #000,
+        -2px  0   0 #000;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin: 0px;
+    text-align: center;
+}
+
+#toc-table-title {
+    font-family: "Playbill", serif;
+    font-size: 50px;
+    color: white;
+    text-shadow:
+        -2px -2px 0 #000,
+        0   -2px 0 #000,
+        2px -2px 0 #000,
+        2px  0   0 #000,
+        2px  2px 0 #000,
+        0    2px 0 #000,
+        -2px  2px 0 #000,
+        -2px  0   0 #000;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin: 0px;
+    text-align: center;
+    border:#000 solid 1px;
+    padding: 1rem;
+    width: 100%;
+}
+
+#prep-ad {
+    display: flex;
+    width: 100%;
+    filter: grayscale(100%);
+    box-sizing: border-box;
+}
+
+#prep-ad img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    max-width: 100%;
+    border: black solid 1px;
+    object-fit: contain;
+    display: block;
+}
+
+#tar-ad img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    filter: grayscale(100%);
+}
+
+#simons-ad img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 240px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+#prudential-ad img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 360px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+#edward-ad img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 260px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+#production-overview {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    font-family: "Century Expanded", serif;
+    text-transform: uppercase;
+    line-height: 1.25;
+    padding: 1.5rem 0 2rem 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#production-overview .usbank-insert {
+    font-family: "Clarendon BT Bold", serif;
+    font-size: 12px;
+    letter-spacing: 0.08rem;
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+#production-overview h3 {
+    font-family: "Clarendon BT Bold", serif;
+    font-size: 26px;
+    letter-spacing: 0.12rem;
+    margin: 0.2rem 0 0.1rem 0;
+}
+
+#production-overview h6 {
+    font-family: "Century Expanded", serif;
+    font-size: 12px;
+    margin: 0.1rem 0 0.4rem 0;
+    letter-spacing: 0.08rem;
+}
+
+#production-overview h4 {
+    font-family: "Clarendon BT Bold", serif;
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+    margin: 0.2rem 0 0.2rem 0;
+}
+
+#production-overview h5 {
+    font-family: "Clarendon BT Bold", serif;
+    font-size: 16px;
+    letter-spacing: 0.12rem;
+    margin: 0.2rem 0 0.6rem 0;
+}
+
+#production-overview p {
+    font-size: 11px;
+    line-height: 1.35;
+    margin: 0.3rem 0 0.6rem 0;
+}
+
+#hadestown-title {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between ;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Clarendon BT Bold', serif;
+}
+
+#address span {
+    font-family: 'Clarendon BT Roman', serif;
+    font-size: 16px;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+#playbill-cover-img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    padding: 0px;
+}
+
+#title-page {
+    max-height: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+#lexus-ad {
+    display: flex;
+    width: 100%;
+    border: black solid 1px;
+}
+
+#lexus-ad img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width:750px) {
+    #lexus-ad img,
+    #prep-ad img,
+    #tar-ad img,
+    #simons-ad img,
+    #prudential-ad img {
+        max-height: 240px;
+    }
+    #edward-ad img {
+        max-height: 220px;
+    }
+}
+
+@media (max-width:600px) {
+    #lexus-ad img,
+    #prep-ad img,
+    #tar-ad img,
+    #simons-ad img,
+    #prudential-ad img {
+        max-height: 200px;
+    }
+    #edward-ad img {
+        max-height: 180px;
+    }
+}
+
+#playbill-cover {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#playbill-toc {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+#playbill-toc > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-family: "Century Expanded", serif;
+}
+
+#playbill-toc .toc-links {
+    align-items: center;
+    text-align: center;
+}
+
+#playbill-toc .toc-links p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 0.2rem 0;
+}
+
+#playbill-toc * {
+    margin: 0;
+    padding: 0;
+}
+
+
+#table-of-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+}
+
+#playbill-credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: content-box;
+}
+
+#playbill-credits > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+}
+
+#playbill-copyright {
+    width: 100%;
+    margin: 0;
+    border: #000 solid 1px;
+    padding: 1rem;
+}
+
+
+span.left {
+    font-weight: bolder;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headshot-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    max-width: 740px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    max-width: none;
+}
+
+.actor-profile {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    flex: 0 0 auto;
+    width: 116px;
+    max-width: none;
+}
+
+.actor-profile img {
+    border: black solid 1px;
+    width: 116px;
+    height: 116px;
+    object-fit: cover;
+}
+
+.actor-profile p {
+    margin: 8px 0 0;
+    text-transform: uppercase;
+    font-family: 'Clarendon BT Bold', serif;
+    font-size: 14px;
+    line-height: 1.05;
+    letter-spacing: 0;
+}
+
+#cast-profiles {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* max-width: 50%; */
 }
