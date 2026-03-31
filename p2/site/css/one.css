@@ -29,9 +29,7 @@
     src: url(../fonts/Clarendon\ Blk\ BT\ Black.ttf) format('opentype');
 }
 
-* {
-    font-family: 'Century Expanded', serif;
-}
+
 
 
 body {
@@ -543,4 +541,8 @@ div {
     #production-overview p {
         font-size: 10px;
     }
+}
+
+td {
+    font-family: 'Century Expanded', serif;
 }
