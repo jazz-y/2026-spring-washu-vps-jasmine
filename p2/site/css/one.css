@@ -375,6 +375,11 @@ h6 {
     }
 }
 
+.simple-ad {
+    border: black solid 1px;
+    width: 100%;
+}
+
 #playbill-cover {
     width: 50%;
     height: auto;
