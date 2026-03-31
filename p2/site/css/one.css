@@ -53,44 +53,7 @@ html {
 }
 
 
-@media (max-width:750px) {
-    div {
-        max-width: 90%;
-    }
-    body {
-        width: 95%;
-        max-width: 100%;
-    }
-    #playbill-title {
-        font-size: 64px;
-        letter-spacing: 0.6rem;
-    }
-    #toc-table-title {
-        font-size: 36px;
-        letter-spacing: 0.4rem;
-    }
-}
 
-@media (max-width:600px) {
-    #playbill-title {
-        font-size: 48px;
-        letter-spacing: 0.4rem;
-    }
-    #toc-table-title {
-        font-size: 28px;
-        letter-spacing: 0.3rem;
-    }
-    #production-overview h3 {
-        font-size: 20px;
-    }
-    #production-overview h4 {
-        font-size: 24px;
-        letter-spacing: 0.12rem;
-    }
-    #production-overview p {
-        font-size: 10px;
-    }
-}
 
 p {
     text-align: center;
@@ -541,4 +504,43 @@ div {
     align-content: center;
     justify-content: center;
     /* max-width: 50%; */
+}
+
+@media (max-width:750px) {
+    div {
+        max-width: 90%;
+    }
+    body {
+        width: 95%;
+        max-width: 100%;
+    }
+    #playbill-title {
+        font-size: 64px;
+        letter-spacing: 0.6rem;
+    }
+    #toc-table-title {
+        font-size: 30px;
+        letter-spacing: 0.4rem;
+    }
+}
+
+@media (max-width:600px) {
+    #playbill-title {
+        font-size: 48px;
+        letter-spacing: 0.4rem;
+    }
+    #toc-table-title {
+        font-size: 28px;
+        letter-spacing: 0.3rem;
+    }
+    #production-overview h3 {
+        font-size: 20px;
+    }
+    #production-overview h4 {
+        font-size: 24px;
+        letter-spacing: 0.12rem;
+    }
+    #production-overview p {
+        font-size: 10px;
+    }
 }
