@@ -3,6 +3,7 @@
 html {
     background-color: rgb(132, 214, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 3rem;
 }
 
 #title {
@@ -13,4 +14,14 @@ html {
 #name {
     font-family: 'Yellowtail', cursive;
     font-size: 5rem;
+}
+
+#circle-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: drop-shadow(5px 5px 10px rgba(0, 110, 255, 0.5));
+    width: 400px;
+    height: 400px;
+    opacity: 0.5;
 }
