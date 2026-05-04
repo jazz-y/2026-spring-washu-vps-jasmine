@@ -655,6 +655,35 @@ body > div {
     break-inside: avoid;
 }
 
+#flipbook-nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(135deg, transparent 50%, #ffffff 50%), url("https://img.freepik.com/free-photo/whitish-grain-wall-template_1194-6731.jpg?semt=ais_incoming&w=740&q=80");
+    background-size: auto, cover;
+    filter: grayscale(100%);
+    color: transparent;
+    /* border: none;s */
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    z-index: 1000;
+    margin: 0;
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    border-radius: 0;
+}
+
+#flipbook-nav:hover {
+    width: 80px;
+    height: 80px;
+    /* funky stuff to make it look like a folded page */
+    background-image: linear-gradient(135deg, transparent 50%, #f4f4f4 50%), url("https://img.freepik.com/free-photo/whitish-grain-wall-template_1194-6731.jpg?semt=ais_incoming&w=740&q=80");
+    box-shadow: -6px -6px 12px rgba(0, 0, 0, 0.25);
+}
+
 @media (max-width:750px) {
     #lexus-ad img,
     #prep-ad img,
