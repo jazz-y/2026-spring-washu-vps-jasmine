@@ -104,6 +104,7 @@
 
 * {
     font-family: Comfortaa, sans-serif;
+    box-sizing: border-box;
 }
 
 span {
@@ -242,7 +243,7 @@ nav {
 }
 
 .menu-row > * {
-    width: 33.33%;
+    flex: 1;
     /* height: 100%; */
 }
 
@@ -275,19 +276,29 @@ nav {
     overflow: hidden;
     background-color: rgb(205, 239, 245);
     border-radius: 0.5rem;
+    max-width: 250px;
+    max-height: 250px;
+    margin: auto;
 }
 
 .item {
     text-align: center;
-    z-index: 2;
+    z-index: 0;
     padding: 0.5rem;
     background-color: transparent;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 span {
     flex: 1;
     /* border: 0.1rem solid black; */
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(205, 239, 245);
 
 }
